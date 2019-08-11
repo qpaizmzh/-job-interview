@@ -62,3 +62,24 @@
 
 ![](/HTTP相关/4.png)
 
+### Session简介
+
+- 服务器端的机制，在服务器上保存信息（使用类似散列表的形式保存）
+- 解析客户端请求并且操作session id,按需保存状态信息
+
+### Session的实现方式
+
+- 使用Cookie实现
+- 在URL回写实现（URL回写是指服务器在给浏览器页面的所有连接中都携带JSessionID的参数，这样客户端点击任意连接都会把Jessionid带回服务器），直接在地址栏输入该资源的ID是匹配不到服务器对应的资源的，Tomcat会值允许这两种实现方式的一种，然后禁止另一种
+
+### Cookie和Session的区别
+
+- Cookie数据存放在客户的浏览器上，Seesion数据放在服务器上
+- Session相对于Cookie安全
+- 考虑减轻服务器负担，应当使用Cookie
+
+### SSL（Security Sockets layers 安全套接层）
+
+- 为网络通信提供安全及数据完整性的一种安全协议
+- SSL位于应用层和TCP之间，是操作系统对外API，SSL3.0更名为TLS
+- 采用身份认证和数据加密保证网络安全
