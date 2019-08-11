@@ -106,3 +106,4 @@
 - 连接方式不同，HTTPS默认443端口，http默认80端口
 - HTTPS=HTTP+加密+认证+完整性保护，比HTTP安全
 - HTTPS不是绝对安全，因为某些浏览器默认填充http://，请求需要跳转，存在被劫持的风险，这时可以使用HSTS（HTTP Strict Transport Security）来优化
+
