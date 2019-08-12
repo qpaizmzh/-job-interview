@@ -10,4 +10,5 @@
 * [数据库方面](shu-ju-ku-fang-mian.md)
   * [1、索引模块](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai.md)
     * [B-TREE](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b-tree.md)
+    * [B+TREE](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b+tree.md)
 
