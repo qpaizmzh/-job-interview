@@ -23,6 +23,7 @@
   * 主流是B+树，还有Hash索引，还有BITMap等，其中Mysql不支持bitmap,基于InnoDb和myisam引擎的mysql不显式支持hash索引
 
 * 密集索引和稀疏索引的区别
+
 * 密集索引中美一个搜索码都对应一个索引值，在B+树叶子节点保存整行的信息，稀疏索引只为特定索引建立索引项，且B+树节点只保存了该行的数据对应的主键值和行的物理地址，需要根据直接信息重新定义到对应的行数据
 
 ### 如何定位并优化慢查询Mysql
@@ -40,6 +41,7 @@
   * extra中出现以下2项说明mysql不能使用索引：
     * Using filesort：表示Mysql会对一些结果使用一个外部索引排序，而不是从表里按索引次序读到相关的内容，可能在内存或者是磁盘进行排序。mysql中无法利用索引完成排序的操作称为：“文件排序“
     * Using temporary:表示mysql在对查询结果排序时使用临时表，常见于排序order by和分组查询group by
+  * 测试索引的时候可以使用force index\(索引名\)强制查询语句使用该索引：select × from table force index\(索引名\)来验证各个索引的情况，而添加所以可以使用：alter table
 * 修改sql或者尽量让sql走索引
 
 
