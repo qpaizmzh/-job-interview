@@ -26,6 +26,9 @@
 具体场景具体分析，只提出大致思路
 
 - 根据慢日志定位慢查询sql
+  - 在某个表中使用命令：show variables like %quer%
+  - 使用慢日志查询时，关注三个变量：slow_query_log slow_query_log_file long_query_time，设置某个变量值，使用 set global slow_query_log=on等类似的命令
+  - 使用命令:show status like '% slow_queries%'，可以查询慢查询的记录数
 - 使用explain等工具分析sql
 - 修改sql或者尽量让sql走索引
 
