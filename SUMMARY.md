@@ -11,4 +11,6 @@
   * [1、索引模块](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai.md)
     * [B-TREE](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b-tree.md)
     * [B+TREE](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b+tree.md)
+    * [Hash索引](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/hashsuo-yin.md)
+    * [密集索引和稀疏索引](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/mi-ji-suo-yin-he-xi-shu-suo-yin.md)
 
