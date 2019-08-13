@@ -16,5 +16,11 @@
   * 测试索引的时候可以使用force index\(索引名\)强制查询语句使用该索引：select × from table force index\(索引名\)来验证各个索引的情况，而添加所以可以使用：alter table tablename add index 索引名（给该字段添加索引的字段名）
 * 修改sql或者尽量让sql走索引
 
+
+
+联合索引中，mysql的规则是在条件中从左往右进行匹配，如果匹配到了范围查询，像&gt;&lt;between，like等这种符号，终止索引匹配。
+
+![](/优化慢查询/2.png)
+
 ![](/密集索引和稀疏索引/5.png)
 
