@@ -37,6 +37,9 @@
   * 只需要在查询语句的前面添加explain关键字就可以对查询语句执行进行分析：explain select name from tables;
   * 查询出来字段中重点看的是type和extra，type的类型如果是index或者是all,这个就需要开始进行优化
   * ![](/密集索引和稀疏索引/3.png)
+  * extra中出现以下2项说明mysql不能使用索引：
+    * Using filesort：表示Mysql会对一些结果使用一个外部索引排序，而不是从表里按索引次序读到相关的内容，可能在内存或者是磁盘进行排序。mysql中无法利用索引完成排序的操作称为：“文件排序“
+    * Using temporary:表示mysql在对查询结果排序时使用临时表，常见于排序order by和分组查询group by
 * 修改sql或者尽量让sql走索引
 
 
