@@ -1,4 +1,4 @@
-#  密集索引和稀疏索引
+# 密集索引和稀疏索引
 
 * 密集索引文件中的每个搜索码值都对应一个索引值，在B+树的叶子节点中除了保存主键值，还会保存该行的其他值，并且一个表只有一个物理排序，所以一个表只有一个密集索引
 * 稀疏索引文件只为索引码的某些值建立索引项，稀疏索引里，B+树的叶子节点只保存了该行的主键值和物理地址，找到叶子节点之后仍然要通过主键值或者是物理地址定位到对应的行数据
@@ -13,9 +13,11 @@
 * 为什么使用索引？
 
   * 索引能够避免查找数据时全表扫描，提升检索效率
+
 * 什么样的信息能成为索引？
 
   * 主键，唯一键等能让数据具备一定区分性的字段都能成为索引
+
 * 索引的数据结构
   * 主流是B+树，还有Hash索引，还有BITMap等，其中Mysql不支持bitmap,基于InnoDb和myisam引擎的mysql不显式支持hash索引
 * 密集索引和稀疏索引的区别
@@ -25,12 +27,15 @@
 
 具体场景具体分析，只提出大致思路
 
-- 根据慢日志定位慢查询sql
-  - 在某个表中使用命令：show variables like %quer%
-  - 使用慢日志查询时，关注三个变量：slow_query_log slow_query_log_file long_query_time，设置某个变量值，使用 set global slow_query_log=on等类似的命令
-  - 使用命令:show status like '% slow_queries%'，可以查询慢查询的记录数
-- 使用explain等工具分析sql
-  - 只需要在查询语句的前面添加explain关键字就可以对查询语句执行进行分析：explain select name from tables;
-  - 查询出来字段中重点看的是type和extra，type的类型如果是index或者是all,这个就需要开始进行优化
-- 修改sql或者尽量让sql走索引
+* 根据慢日志定位慢查询sql
+  * 在某个表中使用命令：show variables like %quer%
+  * 使用慢日志查询时，关注三个变量：slow\_query\_log slow\_query\_log\_file long\_query\_time，设置某个变量值，使用 set global slow\_query\_log=on等类似的命令
+  * 使用命令:show status like '% slow\_queries%'，可以查询慢查询的记录数
+* 使用explain等工具分析sql
+  * 只需要在查询语句的前面添加explain关键字就可以对查询语句执行进行分析：explain select name from tables;
+  * 查询出来字段中重点看的是type和extra，type的类型如果是index或者是all,这个就需要开始进行优化
+  * ![](/密集索引和稀疏索引/3.png)
+* 修改sql或者尽量让sql走索引
+
+
 
