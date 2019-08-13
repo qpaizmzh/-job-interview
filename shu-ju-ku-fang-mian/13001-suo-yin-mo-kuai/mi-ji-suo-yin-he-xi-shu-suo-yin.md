@@ -30,5 +30,7 @@
   - 使用慢日志查询时，关注三个变量：slow_query_log slow_query_log_file long_query_time，设置某个变量值，使用 set global slow_query_log=on等类似的命令
   - 使用命令:show status like '% slow_queries%'，可以查询慢查询的记录数
 - 使用explain等工具分析sql
+  - 只需要在查询语句的前面添加explain关键字就可以对查询语句执行进行分析：explain select name from tables;
+  - 查询出来字段中重点看的是type和extra，type的类型如果是index或者是all,这个就需要开始进行优化
 - 修改sql或者尽量让sql走索引
 
