@@ -14,4 +14,7 @@
     * [Hash索引](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/hashsuo-yin.md)
     * [密集索引和稀疏索引](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/mi-ji-suo-yin-he-xi-shu-suo-yin.md)
     * [优化慢查查询的sql](shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/you-hua-man-cha-cha-xun-de-sql.md)
+  * [2、锁模块](shu-ju-ku-fang-mian/23001-suo-mo-kuai.md)
+    * [MyISAM与InnoDB关于锁方面的区别是什么](shu-ju-ku-fang-mian/23001-suo-mo-kuai/myisamyu-innodb-guan-yu-suo-fang-mian-de-qu-bie-shi-shi-yao.md)
+    * [数据库锁的分类](shu-ju-ku-fang-mian/23001-suo-mo-kuai/shu-ju-ku-suo-de-fen-lei.md)
 
