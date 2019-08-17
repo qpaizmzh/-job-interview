@@ -18,4 +18,5 @@
     * [MyISAM与InnoDB关于锁方面的区别是什么](shu-ju-ku-fang-mian/23001-suo-mo-kuai/myisamyu-innodb-guan-yu-suo-fang-mian-de-qu-bie-shi-shi-yao.md)
     * [数据库锁的分类](shu-ju-ku-fang-mian/23001-suo-mo-kuai/shu-ju-ku-suo-de-fen-lei.md)
     * [事务隔离级别以及各级别下的并发访问问题](shu-ju-ku-fang-mian/23001-suo-mo-kuai/shi-wu-ge-li-ji-bie-yi-ji-ge-ji-bie-xia-de-bing-fa-fang-wen-wen-ti.md)
+  * [语法部分](shu-ju-ku-fang-mian/yu-fa-bu-fen.md)
 
