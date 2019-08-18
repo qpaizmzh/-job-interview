@@ -6,5 +6,5 @@
   * ### BGSAVE:Fork出一个子进程来创建RDB文件，不阻塞服务器进程
   * ### ![](/redis/2.png)
 
-
+![](/redis/3.png)
 
