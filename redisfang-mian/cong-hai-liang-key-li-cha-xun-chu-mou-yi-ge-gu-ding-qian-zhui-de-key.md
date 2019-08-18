@@ -7,5 +7,5 @@
   * 键的数量过大会使服务卡顿
   * ![](/keys/1.png)
 
-
+使用SCAN指令可以无堵塞获取匹配的keys列表：SCAN cursor \[MATCH pattern\] \[COUNT count\]
 
