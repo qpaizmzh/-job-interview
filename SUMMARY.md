@@ -22,4 +22,5 @@
 * [Redis方面](redisfang-mian.md)
   * [为什么Redis这么快](redisfang-mian/wei-shiyao-redis-zhe-yao-kuai.md)
   * [多路I/O复用模型](redisfang-mian/duo-lu-i-o-fu-yong-mo-xing.md)
+  * [用过的Redis数据类型](redisfang-mian/yong-guo-de-redis-shu-ju-lei-xing.md)
 
