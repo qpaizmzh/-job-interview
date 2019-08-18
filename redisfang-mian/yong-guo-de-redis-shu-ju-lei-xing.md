@@ -3,8 +3,8 @@
 ## 供用户使用的数据类型
 
 * String，最基本的安全数据类型，二进制安全（值可以存储512M）
-* Hash：String元素组成的字典，适用于存储对象，是一个field和value的映射表
-* List列表：按照String元素插入顺序排序
+* Hash：String元素组成的字典，适用于存储对象，是一个field和value的映射表 常用命令 hmset hset hget
+* List列表：按照String元素插入顺序排序  常用命令（lpush lrange）
 
 
 
