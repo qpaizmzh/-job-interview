@@ -21,4 +21,5 @@
   * [语法部分](shu-ju-ku-fang-mian/yu-fa-bu-fen.md)
 * [Redis方面](redisfang-mian.md)
   * [为什么Redis这么快](redisfang-mian/wei-shiyao-redis-zhe-yao-kuai.md)
+  * [多路I/O复用模型](redisfang-mian/duo-lu-i-o-fu-yong-mo-xing.md)
 
