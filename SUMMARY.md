@@ -20,4 +20,5 @@
     * [事务隔离级别以及各级别下的并发访问问题](shu-ju-ku-fang-mian/23001-suo-mo-kuai/shi-wu-ge-li-ji-bie-yi-ji-ge-ji-bie-xia-de-bing-fa-fang-wen-wen-ti.md)
   * [语法部分](shu-ju-ku-fang-mian/yu-fa-bu-fen.md)
 * [Redis方面](redisfang-mian.md)
+  * [为什么Redis这么快](redisfang-mian/wei-shiyao-redis-zhe-yao-kuai.md)
 
