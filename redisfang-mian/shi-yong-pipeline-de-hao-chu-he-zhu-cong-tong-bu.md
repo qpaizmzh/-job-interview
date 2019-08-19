@@ -9,3 +9,14 @@
 
 ## Redis的同步机制
 
+### 全同步过程
+
+* Slave发送sync指令到Master
+* master启动一个后台进程，将Redis中的数据快照保存到文件中
+* Master将保存数据快照期间接收到的写命令缓存起来
+* Master完成写文件操作后，将该文件发送给Slave
+* 使用新的AOF文件替换掉就的AOF文件
+* master将这期间收集的增量写命令发送给Slave端
+
+
+
