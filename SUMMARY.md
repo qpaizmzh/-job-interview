@@ -27,4 +27,5 @@
   * [如何通过Redis实现分布式锁](redisfang-mian/ru-he-tong-guo-redis-shi-xian-fen-bu-shi-suo.md)
   * [如何使用Redis做异步队列](redisfang-mian/ru-he-shi-yong-redis-zuo-yi-bu-dui-lie.md)
   * [Redis如何做持久化](redisfang-mian/redisru-he-zuo-chi-jiu-hua.md)
+  * [使用Pipeline的好处和主从同步](redisfang-mian/shi-yong-pipeline-de-hao-chu-he-zhu-cong-tong-bu.md)
 
