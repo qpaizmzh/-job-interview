@@ -30,4 +30,5 @@
   * [使用Pipeline的好处和主从同步](redisfang-mian/shi-yong-pipeline-de-hao-chu-he-zhu-cong-tong-bu.md)
   * [Redis的集群原理](redisfang-mian/redisde-ji-qun-yuan-li.md)
 * [Linux方面](linuxfang-mian.md)
+  * [如何查找特定的文件](linuxfang-mian/ru-he-cha-zhao-te-ding-de-wen-jian.md)
 
