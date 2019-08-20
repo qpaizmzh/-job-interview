@@ -32,4 +32,5 @@
 * [Linux方面](linuxfang-mian.md)
   * [如何查找特定的文件](linuxfang-mian/ru-he-cha-zhao-te-ding-de-wen-jian.md)
   * [检索文件内容](linuxfang-mian/jian-suo-wen-jian-nei-rong.md)
+  * [对文件内容做统计](linuxfang-mian/dui-wen-jian-nei-rong-zuo-tong-ji.md)
 
