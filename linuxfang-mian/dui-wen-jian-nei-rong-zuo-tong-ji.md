@@ -12,6 +12,7 @@
   * awk '{print $1,$4\|\| NR==1}' netstat.txt 这个NR==1可以匹配第一行字符串进行显示
   * awk ‘$1=="tcp" && $2==1{print $1,$4}' netstat.txt 加入了判断，使该列符合该判断的行数据才能进行显示
   * awk -F ',' '{print $1,$4}' netstat.txt 指定逗号为分割符分割相应的数据
+  * awk '{enginearr\[$1\]++}'END{for\(i in enginearr\)print i"\t"enginearr\[i\]}  前面创建一个数组变量，并且要求在循环的时候发现重复的就自增，后面的循环就是在数组中显示相应的数组的索引和对应的值
 
 
 
