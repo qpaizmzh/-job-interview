@@ -8,7 +8,7 @@
 
 * 例子：
 
-  * awk '{print $1,$4}' netstat.txt  第二个参数表示的是现实由awk默认空白格分割的在netstat.txt文件的第一列和第四列显示
+  * awk '{print $1,$4}' netstat.txt  第二个参数表示的是由awk命令中默认空白格分割，在netstat.txt文件中挑选第一列和第四列显示
 
 
 
