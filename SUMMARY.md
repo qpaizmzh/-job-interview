@@ -34,4 +34,6 @@
   * [检索文件内容](linuxfang-mian/jian-suo-wen-jian-nei-rong.md)
   * [对文件内容做统计](linuxfang-mian/dui-wen-jian-nei-rong-zuo-tong-ji.md)
   * [批量替换文件内容](linuxfang-mian/pi-liang-ti-huan-wen-jian-nei-rong.md)
+* JVM相关
+  * [平台无关性怎么实现？](ping-tai-wu-guan-xing-zen-yao-shi-xian-ff1f.md)
 
