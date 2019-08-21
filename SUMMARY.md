@@ -36,4 +36,5 @@
   * [批量替换文件内容](linuxfang-mian/pi-liang-ti-huan-wen-jian-nei-rong.md)
 * JVM相关
   * [平台无关性怎么实现？](ping-tai-wu-guan-xing-zen-yao-shi-xian-ff1f.md)
+  * [JVM如何加载.class文件](jvmru-he-jia-8f7d-class-wen-jian.md)
 
