@@ -7,3 +7,11 @@
 
 
 
+## 区别：
+
+* ![](/区别/1.png)
+* Class.forName得到的class是已经初始化完成的
+* ClassLoader.loadClass得到的class是还没有连接的
+
+
+
