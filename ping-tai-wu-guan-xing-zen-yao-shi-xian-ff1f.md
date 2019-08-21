@@ -57,5 +57,5 @@ public class com.nobody.hr.bean.ChatResp {
 }
 ```
 
-![](/平台/1.png)
+![](/平台/1.png)Java源码首先被编译成字节码，再由不同平台的JVM进行解析，Java语言在不同的平台上运行时不需要进行重新的编译，Java虚拟机在执行字节码的时候，把字节码传换成具体平台上的机器指令
 
