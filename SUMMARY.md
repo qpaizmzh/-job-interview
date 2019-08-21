@@ -39,4 +39,5 @@
   * [JVM如何加载.class文件](jvmru-he-jia-8f7d-class-wen-jian.md)
   * [反射](fan-she.md)
   * [谈谈ClassLoader](lei-cong-bian-yi-dao-zhi-xing-de-guo-cheng.md)
+  * [LoadClass和forName的区别](loadclasshe-forname-de-qu-bie.md)
 
