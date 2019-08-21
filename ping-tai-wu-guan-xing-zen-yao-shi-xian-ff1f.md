@@ -2,7 +2,11 @@
 
 原生反编译的命令：javap -c com.abc.cdf.ehg.class 其中com后面的是class文件的全路径
 
-原生反编译例子：
+原生反编译例子（字节码）：在非静态方法中，
+
+aload\_0 表示对this的操作，在static 方法中，
+
+aload\_0表示对方法的第一参数的操作。
 
 ```java
 Compiled from "ChatResp.java"
@@ -33,9 +37,9 @@ public class com.nobody.hr.bean.ChatResp {
        2: putfield      #2                  // Field from:Ljava/lang/String;
        5: return
 
-  public com.nobody.hr.bean.ChatResp();
+  public com.nobody.hr.bean.ChatResp();   //这里是编译时默认给一个无参的构造器
     Code:
-       0: aload_0
+       0: aload_0    //this对象
        1: invokespecial #3                  // Method java/lang/Object."<init>":()V
        4: return
 
@@ -51,8 +55,7 @@ public class com.nobody.hr.bean.ChatResp {
       11: putfield      #2                  // Field from:Ljava/lang/String;
       14: return
 }
-
 ```
 
-
+![](/平台/1.png)
 
