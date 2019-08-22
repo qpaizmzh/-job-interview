@@ -30,5 +30,7 @@
 
 * 所有线程共享：MetaSpace,Java堆
 
+  * 元空间（MetaSpace）和永久代（PermGen）的区别
+
 
 
