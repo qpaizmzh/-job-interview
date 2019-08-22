@@ -24,6 +24,8 @@
       * 操作树栈：入栈、出栈、复制、交换、产生消费变量
       * ![](/模型/1.png)
       * ![](/assets/3.png)
+      * 题外话：递归为什么会引发java.lang.StackoverflowError异常？
+        * 递归过深，栈帧数超出虚拟栈深度
 
 * 所有线程共享：MetaSpace,Java堆
 
