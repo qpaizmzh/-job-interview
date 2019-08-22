@@ -31,6 +31,7 @@
 * 所有线程共享：MetaSpace,Java堆
 
   * 元空间（MetaSpace）和永久代（PermGen）的区别
+    * 元空间使用本地内存，而永久代使用的是JVM的内存
 
 
 
