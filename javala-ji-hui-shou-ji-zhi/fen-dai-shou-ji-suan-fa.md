@@ -21,5 +21,8 @@
   * Survivor区中存放不下的对象
   * 新生成的大对象（-XX：PretenuerSizeThreshold）
 
+* 常用的调优参数
+  * -XX：SurvivorRatio：Eden和Survivor的比值，默认8：1
+
 
 
