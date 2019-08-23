@@ -11,7 +11,7 @@
 
   * Eden区
 
-  * 两个Survior区
+  * 两个Survivor区
 
 
 
