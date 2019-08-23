@@ -22,7 +22,10 @@
   * 新生成的大对象（-XX：PretenuerSizeThreshold）
 
 * 常用的调优参数
+
   * -XX：SurvivorRatio：Eden和Survivor的比值，默认8：1
+  * -XX:NewRatio:老年代和年轻代内存大小的比例
+  * -XX：MaxTenuringThreshold:对象从年轻代晋升到老生代经过GC次数的最大阀值
 
 
 
