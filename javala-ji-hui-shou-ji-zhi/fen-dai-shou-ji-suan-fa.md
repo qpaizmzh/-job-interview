@@ -18,6 +18,8 @@
 * 对象如何晋升到老年代
 
   * 经历一定Minor次数依然存活的对象
+  * Survivor区中存放不下的对象
+  * 新生成的大对象（-XX：PretenuerSizeThreshold）
 
 
 
