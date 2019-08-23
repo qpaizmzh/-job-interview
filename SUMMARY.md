@@ -43,4 +43,5 @@
   * [内存模型](nei-cun-mo-xing.md)
 * [Java垃圾回收机制](javala-ji-hui-shou-ji-zhi.md)
   * [复制算法](javala-ji-hui-shou-ji-zhi/fu-zhi-suan-fa.md)
+  * [标记-整理算法](javala-ji-hui-shou-ji-zhi/biao-8bb0-zheng-li-suan-fa.md)
 
