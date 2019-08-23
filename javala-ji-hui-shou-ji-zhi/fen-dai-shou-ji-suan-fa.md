@@ -31,6 +31,13 @@
 
   * 使用标记-清除和标记-整理算法回收内存
   * Full GC比Minor GC慢，执行频率低
+  * 出发Full GC的条件
+    * 老年代空间不足
+    * 永久代空间不足（1.8及以后没有永久代）
+    * CMS GC时出现promotion failed，concurrent mode failed
+    * Minor GC晋升老年代的平均大小大于老年代的剩余空间
+    * 调用System.gc\(\)
+    * 使用RMI进行RPC或者管理的JDK应用，每小时执行一次Full GC
 
 
 
