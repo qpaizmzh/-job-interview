@@ -41,4 +41,5 @@
   * [谈谈ClassLoader](lei-cong-bian-yi-dao-zhi-xing-de-guo-cheng.md)
   * [LoadClass和forName的区别](loadclasshe-forname-de-qu-bie.md)
   * [内存模型](nei-cun-mo-xing.md)
+* [Java垃圾回收机制](javala-ji-hui-shou-ji-zhi.md)
 
