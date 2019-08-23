@@ -42,4 +42,5 @@
   * [LoadClass和forName的区别](loadclasshe-forname-de-qu-bie.md)
   * [内存模型](nei-cun-mo-xing.md)
 * [Java垃圾回收机制](javala-ji-hui-shou-ji-zhi.md)
+  * [复制算法](javala-ji-hui-shou-ji-zhi/fu-zhi-suan-fa.md)
 
