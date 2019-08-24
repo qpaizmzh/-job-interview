@@ -50,4 +50,5 @@
 * 进程和线程
   * [进程和线程的区别](jin-cheng-he-xian-cheng-de-qu-bie.md)
   * [Thread中的start和run方法的区别](threadzhong-de-start-he-run-fang-fa-de-qu-bie.md)
+  * [Thread和Runnable的关系](threadhe-runnable-de-guan-xi.md)
 
