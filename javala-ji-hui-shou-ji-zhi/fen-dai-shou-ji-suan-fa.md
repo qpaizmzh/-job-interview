@@ -34,7 +34,7 @@
   * 出发Full GC的条件
     * 老年代空间不足
     * 永久代空间不足（1.8及以后没有永久代）
-    * CMS GC时出现promotion failed，concurrent mode failed
+    * CMS GC时出现promotion failed\(这个出现在\)，concurrent mode failed
     * Minor GC晋升老年代的平均大小大于老年代的剩余空间
     * 调用System.gc\(\)
     * 使用RMI进行RPC或者管理的JDK应用，每小时执行一次Full GC
