@@ -57,7 +57,7 @@ public class Cycle implements Runnable {
 }
 ```
 
-* 在JDK1.5之后使用Callable&lt;T&gt;和FutureTask&lt;T&gt;来获得子线程的返回值，而且控制的精度要比上两个好，也不用直接堵塞调用线程：
+* ## 在JDK1.5之后使用Callable&lt;T&gt;和FutureTask&lt;T&gt;来获得子线程的返回值，而且控制的精度要比上两个好，也不用直接堵塞调用线程：
 * ```
   package com.jesus;
 
@@ -91,7 +91,11 @@ public class Cycle implements Runnable {
       }
   }
 
-  ```
+* ## 使用线程池的方法同样可以达到相应的效果
+* 
+
+
+
 
 
 
