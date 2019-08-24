@@ -52,4 +52,5 @@
   * [Thread中的start和run方法的区别](threadzhong-de-start-he-run-fang-fa-de-qu-bie.md)
   * [Thread和Runnable的关系](threadhe-runnable-de-guan-xi.md)
   * [实现线程返回的方式](shi-xian-xian-cheng-fan-hui-de-fang-shi.md)
+  * [sleep和wait方法的区别](sleephe-wait-fang-fa-de-qu-bie.md)
 
