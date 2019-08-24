@@ -45,4 +45,5 @@
   * [复制算法](javala-ji-hui-shou-ji-zhi/fu-zhi-suan-fa.md)
   * [标记-整理算法](javala-ji-hui-shou-ji-zhi/biao-8bb0-zheng-li-suan-fa.md)
   * [分代收集算法](javala-ji-hui-shou-ji-zhi/fen-dai-shou-ji-suan-fa.md)
+  * [常见的垃圾收集器](javala-ji-hui-shou-ji-zhi/chang-jian-de-la-ji-shou-ji-qi.md)
 
