@@ -11,6 +11,8 @@
     * ## 最普遍的引用：Object object= new Object（）；
     * ## 抛出OutofMemoryError终止程序也不会回收具有强引用的对象
     * ## 通过将对象设置为null来弱化引用，使其被回收
+  * ## ![](/常见/3.png)
+  * ## ![](/常见/4.png)
 
 
 
