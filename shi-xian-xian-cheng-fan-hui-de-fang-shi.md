@@ -1,6 +1,6 @@
 # 实现处理线程的返回值
 
-```
+```java
   @Override
   public void run() {
       try {
@@ -20,8 +20,6 @@
   }
 }
 ```
-
-
 
 * ## 在JDK1.5之后使用Callable和FutureTask来获得子线程的返回值，而且控制的精度要比上两个好，也不用直接堵塞调用线程：
 * ```java
@@ -50,9 +48,34 @@
   System.out.println("return:"+task.get());
   }
   }
-
   ```
 * ## 使用线程池的方法同样可以达到相应的效果
-* 
+* ```java
+  package com.jesus;
+
+  import java.util.concurrent.*;
+
+  public class MyFutureTask {
+      public static void main(String[] args){
+          ExecutorService service = Executors.newCachedThreadPool();
+          Future<String> submit =
+                  service.submit(new MyCallable());
+          if (!submit.isDone()){
+              System.out.println("no finished");
+          }
+          try {
+              System.out.println(submit.get());
+          } catch (InterruptedException e) {
+              e.printStackTrace();
+          } catch (ExecutionException e) {
+              e.printStackTrace();
+          }finally {
+              service.shutdown();//线程池使用完成记得关闭
+          }
+      }
+  }
+
+  ```
+
 
 
