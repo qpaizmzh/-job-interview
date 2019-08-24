@@ -47,7 +47,7 @@
   * [分代收集算法](javala-ji-hui-shou-ji-zhi/fen-dai-shou-ji-suan-fa.md)
   * [常见的垃圾收集器](javala-ji-hui-shou-ji-zhi/chang-jian-de-la-ji-shou-ji-qi.md)
   * [常见面试题](javala-ji-hui-shou-ji-zhi/chang-jian-mian-shi-ti.md)
-* 进程和线程
+* [进程和线程](jin-cheng-he-xian-cheng.md)
   * [进程和线程的区别](jin-cheng-he-xian-cheng-de-qu-bie.md)
   * [Thread中的start和run方法的区别](threadzhong-de-start-he-run-fang-fa-de-qu-bie.md)
   * [Thread和Runnable的关系](threadhe-runnable-de-guan-xi.md)
