@@ -14,7 +14,7 @@
 ### HashMap:如何减少碰撞
 
 * 扰动函数，促使元素位置分布均匀，减少碰撞几率
-* 使用final对象，并采用合适的equals\(\)和hashcode\(\)方法
+* 使用final对象，并采用合适的equals\(\)和hashcode\(\)方法：不可变性使得**能**够缓存不同键的 hashcode，这将提高整个获取对象的速度，使用 String、Integer 这样的 wrapper 类作为键是非常好的选择。
 
 
 
