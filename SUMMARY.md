@@ -57,4 +57,5 @@
   * [线程的中断](xian-cheng-de-zhong-duan.md)
 * [Java常用类库](javachang-yong-lei-ku.md)
   * [Error和Exception的区别](javachang-yong-lei-ku/errorheexception-de-qu-bie.md)
+  * [Collection体系](javachang-yong-lei-ku/collectionti-xi.md)
 
