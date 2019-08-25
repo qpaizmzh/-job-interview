@@ -58,4 +58,5 @@
 * [Java常用类库](javachang-yong-lei-ku.md)
   * [Error和Exception的区别](javachang-yong-lei-ku/errorheexception-de-qu-bie.md)
   * [Collection体系](javachang-yong-lei-ku/collectionti-xi.md)
+  * [集合HashMap](javachang-yong-lei-ku/ji-he-hashmap.md)
 
