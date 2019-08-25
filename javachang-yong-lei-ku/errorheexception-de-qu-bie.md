@@ -10,5 +10,7 @@
 * RuntimeException是程序应该负担的责任
 * Checked Exception可检查异常是Java编译器应该负担的责任
 
+![](/错误/2.png)
+
 
 
