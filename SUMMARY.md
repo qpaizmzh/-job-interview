@@ -63,4 +63,7 @@
   * [JUC包的梳理](javachang-yong-lei-ku/jucbao-de-shu-li.md)
 * [Spring家族](springjia-zu.md)
   * [IOC原理](springjia-zu/iocyuan-li.md)
+  * [Spring的IOC应用](springjia-zu/springde-ioc-ying-yong.md)
+  * [Spring AOP](springjia-zu/spring-aop.md)
+  * [Spring事务的相关考点](springjia-zu/springshi-wu-de-xiang-guan-kao-dian.md)
 
