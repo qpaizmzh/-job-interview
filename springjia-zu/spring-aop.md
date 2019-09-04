@@ -21,9 +21,11 @@ Aspect Oriented Programming
 
 * introduction，introduction可以为原有的对象增加新的属性和方法
 
+### Spring AOP原理
 
+* 此时的SpringAOP框架在某种程度上扮演着一个上帝的角色：
 
-Spring AOP原理
+  **它知道你在这个框架内所做的任何操作，你对每一个实例对象的非final的public方法调用都可以被框架察觉到！**
 
 
 
