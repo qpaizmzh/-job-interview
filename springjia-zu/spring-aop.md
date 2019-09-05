@@ -21,7 +21,7 @@ Aspect Oriented Programming
 
 * introduction，introduction可以为原有的对象增加新的属性和方法
 
-### Spring AOP原理
+### Spring AOP原理\(说的是Java的动态代理机制\)
 
 * 此时的SpringAOP框架在某种程度上扮演着一个上帝的角色：
 
