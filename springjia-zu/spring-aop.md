@@ -33,5 +33,9 @@ Aspect Oriented Programming
 
 * 在代理机制中的继承方式，实现 MethodInterceptor接口，用来处理对代理类上所有方法的请求（这个接口和JDK动态代理InvocationHandler的功能和角色是一样的）
 
+* 在代理机制的接口方式中，做法是先确定要代理的类的实现的所有接口，然后创建对应的classLoader,接口的数量，invocationHandler的实现类，交由Proxy，创建动态的代理类
+
+  * 动态的代理类同样会生成和实际调用类中一模一样的接口对应的方法，只是里面的实际调用的方法全部交由InvocationHandler进行操作
+
 
 
