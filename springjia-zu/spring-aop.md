@@ -29,5 +29,7 @@ Aspect Oriented Programming
 
 * InvocationHandler的作用是将代理类中调用的真实方法的之前、业务代码调用、之后或者其他的操作交由这个接口进行实现，而不是直接由动态代理类包裹所有的之前、业务代码和之后的操作
 
+* 代理模式中需要Proxy和realSubject共同实现相同的功能，两种方式：一个是功能接口，另一个就是继承，让Proxy继承Subject，在获取同样功能的同时，也能通过重写实现多态
+
 
 
