@@ -35,7 +35,7 @@ Aspect Oriented Programming
 
 * 在代理机制的接口方式中，做法是先确定要代理的类的实现的所有接口，然后创建对应的classLoader,接口的数量，invocationHandler的实现类，交由Proxy，创建动态的代理类
 
-  * 动态的代理类同样会生成和实际调用类中一模一样的接口对应的方法，只是里面的实际调用的方法全部交由InvocationHandler进行操作
+  * 动态的代理类同样会生成和实际调用类中一模一样的接口对应的方法，只是里面的实际调用的方法全部交由InvocationHandler进行操作，而代理类会在静态模块中自动生成所有public方法中Method对象，作为参数供由InvocationHandler进行实际方法的调用
 
 
 
