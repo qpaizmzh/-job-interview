@@ -8,7 +8,7 @@ Aspect Oriented Programming
 * 增强\(Advice\):Advice定义了Pointcut里面定义的程序具体要做的操作，它通过before,after和around来区别是在每个 joint point 之前、之后还是代替执行的代码。
 * Target（目标对象）：织入 Advice 的目标对象.。
 * Weaving（织入）：将Aspect和其他的对象连接起来，并创建Advice object的过程
-* 大致关系就是：Joint Cut 就是一堆准备切入的方法的集合，pointcut就是切入的规则，用来筛选合适的Joint Cut，然后Advice就是实施的方式，比如是在之前还是之后执行还是异常执行等等
+* 大致关系就是：Joint Point 就是一堆准备切入的方法的集合，pointcut就是切入的规则，用来筛选合适的Joint Cut，然后Advice就是实施的方式，比如是在之前还是之后执行还是异常执行等等
 
 ### Advice的类型
 
