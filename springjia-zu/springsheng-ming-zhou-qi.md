@@ -1,8 +1,9 @@
 # Bean生命周期
 
 * ![](/bean/1.png)
-
+* ![](/bean/2.png)
 * Spring对Bean实例化
+
 * Spring将值设置到属性上
 * 如果bean实现了BeanNameAware接口，Spring将Bean的Id传递给setBeanName\(\)方法
 * 如果bean实现了BeanFactoryAware接口，Spring将调用setBeanFactory\(\)方法，将BeanFactory容器的实例导入
