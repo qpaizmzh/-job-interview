@@ -66,4 +66,5 @@
   * [Spring的IOC应用](springjia-zu/springde-ioc-ying-yong.md)
   * [Spring AOP](springjia-zu/spring-aop.md)
   * [Spring事务的相关考点](springjia-zu/springshi-wu-de-xiang-guan-kao-dian.md)
+  * [Bean生命周期](springjia-zu/springsheng-ming-zhou-qi.md)
 
