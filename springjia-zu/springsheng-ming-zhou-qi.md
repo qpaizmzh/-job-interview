@@ -11,6 +11,7 @@
   * 如果bean实现了BeanNameAware接口，Spring将Bean的Id传递给setBeanName\(\)方法
 
   * 如果bean实现了BeanFactoryAware接口，Spring将调用setBeanFactory\(\)方法，将BeanFactory容器的实例导入
+
   * 如果bean实现了ApplicationContextAware接口，Spring将调用setApplicationContext\(\)方法，将bean所在的应用上下文的引用传入进来
   * 如果bean实现了BeanPostProcessor接口，Spring将调用post-ProcessBeforeInitialization\(\)方法
   * 如果bean实现了InitializingBean接口，Spring将调用after-PropertiesSet\(\)方法。类似地，如果bean使用init-method声明了初始化的方法，该方法也会被调用；
