@@ -73,7 +73,6 @@
   * [简单的算法考点](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian.md)
 * [Java并发编程](javabing-fa-bian-cheng.md)
   * [cpu多级缓存](cpuduo-ji-huan-cun.md)
-  * 线程安全性
   * [原子类](yuan-zi-lei.md)
   * [线程安全问题](xian-cheng-an-quan-wen-ti.md)
   * [并发容器JUC](bing-fa-rong-qi-juc.md)
