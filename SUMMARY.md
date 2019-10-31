@@ -70,4 +70,5 @@
 * [数据结构与算法](shu-ju-jie-gou-yu-suan-fa.md)
   * [数组和链表](shu-ju-jie-gou-yu-suan-fa/shu-zu-he-lian-biao.md)
   * [二叉树](shu-ju-jie-gou-yu-suan-fa/er-cha-shu.md)
+  * [简单的算法考点](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian.md)
 
