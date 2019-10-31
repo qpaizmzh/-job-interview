@@ -62,7 +62,27 @@
       * 效率：栈的效率比堆高
     * 不同JDK版本之间的intern\(\)方法的区别（这个方法是用于字符串加入到字符串常量池用的）
       * ![](/模型/4.png)
-      * ![](/模型/5.png)
+      * ## ![](/模型/5.png)JMM模型用图
+
+  
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025155311481.png?lastModify=1572540845 "image-20191025155311481")
+
+      ### 同步八种操作
+
+      * ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025160924216.png?lastModify=1572540845 "image-20191025160924216")
+
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025160934289.png?lastModify=1572540845 "image-20191025160934289")
+
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025161021140.png?lastModify=1572540845 "image-20191025161021140")
+
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025161212455.png?lastModify=1572540845 "image-20191025161212455")
+
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025161222848.png?lastModify=1572540845 "image-20191025161222848")
+
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025161253110.png?lastModify=1572540845 "image-20191025161253110")
+
+  
+      ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191025161320327.png?lastModify=1572540924 "image-20191025161320327")
 
 
 
