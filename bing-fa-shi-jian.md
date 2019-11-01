@@ -2,11 +2,11 @@
 
 * 使用本地变量（即方法变量）
 
-* ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191028234610860.png?lastModify=1572543734 "image-20191028234610860")
+* ![](https://github.com/qpaizmzh/-job-interview/blob/master/image-20191028234610860.png)
 
 * 使用不可变类，可以降低同步锁的数量
 
-* 最小锁的作用域范围：了解一下：![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191028235139972.png?lastModify=1572543734 "image-20191028235139972")
+* 最小锁的作用域范围：了解一下：![](https://github.com/qpaizmzh/-job-interview/blob/master/image-20191028235139972.png)
 
 * 使用线程池的Executor,而不是直接new Thread执行
 
