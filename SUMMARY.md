@@ -71,6 +71,8 @@
   * [数组和链表](shu-ju-jie-gou-yu-suan-fa/shu-zu-he-lian-biao.md)
   * [二叉树](shu-ju-jie-gou-yu-suan-fa/er-cha-shu.md)
   * [简单的算法考点](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian.md)
+    * [冒泡算法](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/mao-pao-suan-fa.md)
+    * [选择排序](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/xuan-ze-pai-xu.md)
 * [Java并发编程](javabing-fa-bian-cheng.md)
   * [cpu多级缓存](cpuduo-ji-huan-cun.md)
   * [原子类](yuan-zi-lei.md)
