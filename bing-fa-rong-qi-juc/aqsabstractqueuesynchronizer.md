@@ -26,7 +26,7 @@ CountDownLatch（场景如并行计算，）
           final CountDownLatch countDownLatch = new CountDownLatch(threadCount);
 
           for (int i = 0; i < threadCount; i++) {
-              //这个线程放到执行线程的外面并没有预想的先是finish的结果出现，而是最后出现
+              //这个线程睡眠的方法放到执行线程的外面并没有预想的先是finish的结果出现，而是最后出现
               //说明这个线程的睡眠只针对的是主线程，而不是下面的线程
               //Thread.sleep(100);
               final int threadNum = i;
@@ -51,19 +51,17 @@ CountDownLatch（场景如并行计算，）
           log.info("{}", threadNum);
       }
   }
-
   ```
-
 * Semaphore（维护当前访问的线程的个数，常用于访问有限资源，像是数据库之类的）
 
   * ```java
     final Semaphore semaphore = new Semaphore(3);
- 
+
            for (int i = 0; i < threadCount; i++) {
                final int threadNum = i;
                exec.execute(() -> {
                    try {
-                       if (semaphore.tryAcquire(5000, TimeUnit.MILLISECONDS)) { // 尝试获取一个许可			//semaphore.acquire();//获取一个许可
+                       if (semaphore.tryAcquire(5000, TimeUnit.MILLISECONDS)) { // 尝试获取一个许可            //semaphore.acquire();//获取一个许可
                            test(threadNum);
                            semaphore.release(); // 释放一个许可
                        }
@@ -187,22 +185,19 @@ CountDownLatch（场景如并行计算，）
         }
     }
     ```
-
   * FutureTask和Callable、Future一样，是可以在多线程执行返回特定的值，这是和Runnable不同的地方
 
-  * ```java
+  * \`\`\`java  
     package com.mmall.concurrency.example.aqs;
 
     import lombok.extern.slf4j.Slf4j;
 
-    import java.util.concurrent.Callable;
+    import java.util.concurrent.Callable;  
     import java.util.concurrent.FutureTask;
 
-    @Slf4j
+    @Slf4j  
     public class FutureTaskExample {
 
-    
-    
         public static void main(String[] args) throws Exception {
             FutureTask<String> futureTask = new FutureTask<String>(new Callable<String>() {
                 @Override
@@ -241,25 +236,25 @@ CountDownLatch（场景如并行计算，）
         }
     ```
 
-  * Fork和Join
+* Fork和Join
 
-    * 可能会出现一个线程去窃取另一个线程待执行的任务的情况，所以窃取任务的线程从双端队列的尾部获取任务，被窃取的线程从队列头获取任务
+  * 可能会出现一个线程去窃取另一个线程待执行的任务的情况，所以窃取任务的线程从双端队列的尾部获取任务，被窃取的线程从队列头获取任务
 
-    * fork和join的同步只能由自己的方法操作作为同步的机制，不能使用额外的同步机制，如果这样的话，其他的fork线程就无法执行相应的任务；fork和join线程不能用于拆分读写IO文件流；fork和join的任务不能抛出检查的异常，必须通过相当的代码来处理这些异常
+  * fork和join的同步只能由自己的方法操作作为同步的机制，不能使用额外的同步机制，如果这样的话，其他的fork线程就无法执行相应的任务；fork和join线程不能用于拆分读写IO文件流；fork和join的任务不能抛出检查的异常，必须通过相当的代码来处理这些异常
 
-  * BlockingQueue（线程安全，主要是生产-消费队列，不接受null元素）
+* BlockingQueue（线程安全，主要是生产-消费队列，不接受null元素）
 
-    * 种类比较多，本质上是个双端队列，当队列任务满的时候，插入队列任务的线程就会堵塞，当队列为空的时候，移出队列任务的线程就会堵塞
+  * 种类比较多，本质上是个双端队列，当队列任务满的时候，插入队列任务的线程就会堵塞，当队列为空的时候，移出队列任务的线程就会堵塞
 
-    * ArrayBlockingQueue，先进先出的队列
+  * ArrayBlockingQueue，先进先出的队列
 
-    * DelayQueue,只有在特定的时间之后才能提取元素，无界队列，应用方面比如缓存对象，定时关闭连接，超时处理等等
+  * DelayQueue,只有在特定的时间之后才能提取元素，无界队列，应用方面比如缓存对象，定时关闭连接，超时处理等等
 
-    * LinkedBlockQueue:也是FIFO，只是链表实现
+  * LinkedBlockQueue:也是FIFO，只是链表实现
 
-    * PriorityBlockingQueue：无边界队列，允许null插入，插入该队列的对象必须实现Compareable接口
+  * PriorityBlockingQueue：无边界队列，允许null插入，插入该队列的对象必须实现Compareable接口
 
-    * SynchronizedQueue:只允许一个元素的队列，一个线程插入之后，除非另一个线程移除，否则就会堵塞
+  * SynchronizedQueue:只允许一个元素的队列，一个线程插入之后，除非另一个线程移除，否则就会堵塞
 
 
 
