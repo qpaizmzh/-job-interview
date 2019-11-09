@@ -2,7 +2,7 @@
 
 CountDownLatch（场景如并行计算，）
 
-* ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191027151731877.png?lastModify=1572542179 "image-20191027151731877")
+* ![](/assets/image-20191027151731877.png)
 
 * ```java
   package com.mmall.concurrency.example.aqs;
@@ -74,7 +74,7 @@ CountDownLatch（场景如并行计算，）
 
 * CylicBarrier
 
-  * ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191027164322573.png?lastModify=1572542749 "image-20191027164322573")
+  *![](/assets/image-20191027164322573.png)
 
   * 就是一个可循环重置计数的CountDownLatch，但是计数是从小到大开始加，累计到一定值之后，计数重置为0，线程被唤醒，然后继续执行计数，重复使用
 
@@ -141,7 +141,7 @@ CountDownLatch（场景如并行计算，）
 
 * Condition和FutureTask
 
-  * ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191027215429620.png?lastModify=1572543264 "image-20191027215429620")
+  * ![](/assets/image-20191027215429620.png)
 
   * ```java
     package com.mmall.concurrency.example.lock;
