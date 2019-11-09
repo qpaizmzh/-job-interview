@@ -74,6 +74,7 @@
     * [冒泡算法](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/mao-pao-suan-fa.md)
     * [选择排序](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/xuan-ze-pai-xu.md)
     * [插入排序](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/cha-ru-pai-xu.md)
+    * [快速排序](shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/kuai-su-pai-xu.md)
 * [Java并发编程](javabing-fa-bian-cheng.md)
   * [cpu多级缓存](cpuduo-ji-huan-cun.md)
   * [原子类](yuan-zi-lei.md)
