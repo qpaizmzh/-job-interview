@@ -17,6 +17,42 @@
     如果 getDatabaseProductName() 返回“Oracle (DataDirect)”，databaseId 将被设置为“oracle”。
     ```
   * 在mapperXML文件中中的mappers标签设置databaseId,值就是databaseIDProvider里面的property的value值
+    ```
+    <select id="getEmpById" resultType="com.atguigu.mybatis.bean.Employee"
+    		databaseId="mysql">
+    		select * from tbl_employee where id = #{id}
+    	</select>
+    	<select id="getEmpById" resultType="com.atguigu.mybatis.bean.Employee"
+    		databaseId="oracle">
+    		select EMPLOYEE_ID id,LAST_NAME	lastName,EMAIL email 
+    		from employees where EMPLOYEE_ID=#{id}
+    	</select>
+    ```
+  * 如果是不同的数据库，还需要在配置文件的environments标签里面再添加environment标签（后续会有spring来，了解）
+
+  ```
+         <environments default="dev_mysql">
+  		<environment id="dev_mysql">
+  			<transactionManager type="JDBC"></transactionManager>
+  			<dataSource type="POOLED">
+  				<property name="driver" value="${jdbc.driver}" />
+  				<property name="url" value="${jdbc.url}" />
+  				<property name="username" value="${jdbc.username}" />
+  				<property name="password" value="${jdbc.password}" />
+  			</dataSource>
+  		</environment>
+	
+  		<environment id="dev_oracle">
+  			<transactionManager type="JDBC" />
+  			<dataSource type="POOLED">
+  				<property name="driver" value="${orcl.driver}" />
+  				<property name="url" value="${orcl.url}" />
+  				<property name="username" value="${orcl.username}" />
+  				<property name="password" value="${orcl.password}" />
+  			</dataSource>
+  		</environment>
+  	</environments>
+  ```
 
 
 
