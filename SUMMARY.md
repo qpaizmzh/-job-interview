@@ -85,4 +85,5 @@
   * [死锁](si-suo.md)
   * [并发实践](bing-fa-shi-jian.md)
 * [Mybatis](mybatis.md)
+  * [mybatis的基本配置](mybatis/mybatisde-ji-ben-pei-zhi.md)
 
