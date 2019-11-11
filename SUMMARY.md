@@ -29,6 +29,7 @@
   * [Redis如何做持久化](redisfang-mian/redisru-he-zuo-chi-jiu-hua.md)
   * [使用Pipeline的好处和主从同步](redisfang-mian/shi-yong-pipeline-de-hao-chu-he-zhu-cong-tong-bu.md)
   * [Redis的集群原理](redisfang-mian/redisde-ji-qun-yuan-li.md)
+  * [redis中的缓存问题](redisfang-mian/rediszhong-de-huan-cun-wen-ti.md)
 * [Linux方面](linuxfang-mian.md)
   * [如何查找特定的文件](linuxfang-mian/ru-he-cha-zhao-te-ding-de-wen-jian.md)
   * [检索文件内容](linuxfang-mian/jian-suo-wen-jian-nei-rong.md)
