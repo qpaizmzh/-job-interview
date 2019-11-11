@@ -88,4 +88,5 @@
   * [mybatis的基本配置](mybatis/mybatisde-ji-ben-pei-zhi.md)
   * [基本标签解析](mybatis/ji-ben-biao-qian-jie-xi.md)
     * [dataBaseIdProvider的使用](mybatis/ji-ben-biao-qian-jie-xi/databaseidproviderde-shi-yong.md)
+  * [spring-mybatis整合](mybatis/spring-mybatiszheng-he.md)
 
