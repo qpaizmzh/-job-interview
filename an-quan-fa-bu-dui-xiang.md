@@ -19,7 +19,7 @@
       }
   }
   ```
-* 类似的情况还有map类型的，如果只是添加了给map变量添加了final关键字，但是还是不会对里面的内容产生不可变特性，依旧可以修改map里面对应的值，要想改变这种情况，要么创建该map的时候给这个value类型添加final关键字，要么使用Collections.unmodifiedMap\(Map map\)方法
+* 类似的情况还有map类型的，如果只是添加了给map变量添加了final关键字，但是还是不会对里面的内容产生不可变特性，依旧可以修改map里面对应的值，要想改变这种情况，要么创建该map的时候给这个value类型添加final关键字，要么使用Collections.unmodifiedMap\(Map map\)方法，还可以使用google工具类中的ImmutableMap\List等（需自己找包下载）
 
 * ## 解决方案：
 * 在静态初始化函数中初始化一个对象引用
