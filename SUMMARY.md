@@ -79,6 +79,7 @@
 * [Java并发编程](javabing-fa-bian-cheng.md)
   * [cpu多级缓存](cpuduo-ji-huan-cun.md)
   * [原子类](yuan-zi-lei.md)
+  * [安全发布对象](an-quan-fa-bu-dui-xiang.md)
   * [线程安全问题](xian-cheng-an-quan-wen-ti.md)
   * [并发容器JUC](bing-fa-rong-qi-juc.md)
     * [AQS（AbstractQueueSynchronizer）](bing-fa-rong-qi-juc/aqsabstractqueuesynchronizer.md)

@@ -1,27 +1,5 @@
 # 线程安全问题
 
-## 安全发布对象
-
-* 有时候像是这种的本来想封装的对象因为某些方法导致其变量被公布出去能够直接使用：
-
-* ```
-  public class test {
-      private String[] abc = {"1", "2", "23", "4"};
-
-      public String[] getAbc() {
-          return abc;
-      }
-
-      public static void main(String[] args) {
-          String[] abc = new test().getAbc();
-          System.out.println(abc[3]);
-          abc[3] = "d";
-          System.out.println(abc[3]);
-
-      }
-  }
-  ```
-
 ## 单例模式的线程安全问题
 
 * 普通的单例模式（饿汉模式）
