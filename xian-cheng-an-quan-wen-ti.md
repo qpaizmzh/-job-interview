@@ -80,7 +80,7 @@ public class ConcurrencyTest {
     //这个可以保证线程安全，但是每一次调用都要添加一个锁，非常的耗性能
     public synchronized ConcurrencyTest getInstance() {
 
-        //这里同样没有线程安全
+        //如果不加方法的synchronized的关键字，这里同样没有线程安全
         //CPU创建实例，经过分配内存对象空间，初始化对象，把变量指向分配的内存空间
         //实际运行的时候， 有可能会出现初始化对象和变量分配内存空间调换的情况，导致以为对象已经创建，但是实际上初始化并没有完成的情况
         if (concurrencyTest == null) {
