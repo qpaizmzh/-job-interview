@@ -6,7 +6,7 @@
 
 ## CAS算法中的ABA问题
 
-* ![](file://C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20191026105912283.png?lastModify=1572541285 "image-20191026105912283")
+* ![](/assets/image-20191026105912283.png "image-20191026105912283")
 
 
 
