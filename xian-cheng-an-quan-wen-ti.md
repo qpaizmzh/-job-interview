@@ -1,6 +1,8 @@
 # 线程安全问题
 
-## 安全发布对象（单例模式的线程安全问题）
+## 安全发布对象
+
+## 单例模式的线程安全问题
 
 * 普通的单例模式（饿汉模式）
 
@@ -54,7 +56,7 @@ public class ConcurrencyTest {
 public class ConcurrencyTest {
     private ConcurrencyTest() {
     }
-	//这样确实可以线程安全，但是一开始从类加载就创建实例，容易浪费资源
+    //这样确实可以线程安全，但是一开始从类加载就创建实例，容易浪费资源
     private static ConcurrencyTest concurrencyTest = new ConcurrencyTest();;
 
     public  ConcurrencyTest getInstance() {
@@ -127,7 +129,6 @@ public class ConcurrencyTest {
         return createConcurrencyInstance.INSTANCE.getInstance();
     }
 }
-
 ```
 
 ## 堆栈封闭
