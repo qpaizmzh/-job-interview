@@ -54,6 +54,8 @@
     public void givemeTest(){
         filterStringwithInteface(new ArrayList<Skt>(), (Skt skts)->skts.getCatogory().equals(""));
     }
+    
+    
 ```
 
 
