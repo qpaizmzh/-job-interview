@@ -12,5 +12,18 @@
 * 数据库连接资源
 * 套接字资源
 
+## java7以后的关闭资源的方式
+
+* 使用try\(resource\)...catch这样的方式自动关闭对应的资源，本质上性能没有提升，只是一个语法糖
+* 可以实现多资源的自动关闭
+* 放进try括号里面的必须是实现了AutoClosable接口的
+* 避免异常屏蔽
+
+## 资源关闭的特殊情况
+
+* 资源对象呗return的情况下，由调用方进行关闭
+* ByteInputStream等不需要检查关闭的资源对象，因为其源代码的close方法并没有任何的执行体
+* 使用Socket获取的InputStream和OutputStream对象不需要关闭，因为这两个有一个关闭会导致整个的Socket被关闭，正确方法是使用Socket的closeInput方法进行关闭
+
 
 
