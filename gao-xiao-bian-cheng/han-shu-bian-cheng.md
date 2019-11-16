@@ -71,5 +71,9 @@ BinaryOperator<Long> binaryOperator =(x,y)->x+y;
 System.out.println(binaryOperator.apply(1L,2L));
 ```
 
+## 常用的函数接口以及使用的方向
+
+* ![](/高效编程/函数编程1.png)
+
 
 
