@@ -94,4 +94,5 @@
 * [高效编程](gao-xiao-bian-cheng.md)
   * [函数编程](gao-xiao-bian-cheng/han-shu-bian-cheng.md)
   * [流操作和集合操作对比](gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.md)
+  * 优雅关闭资源
 
