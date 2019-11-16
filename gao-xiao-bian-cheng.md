@@ -25,7 +25,6 @@
         Consumer<String> consumer = (String number)->number.length()
         Consumer<String> consumer2 = String::length;
     }
-
 ```
 
 * 指向现有对象的实例方法的方法引用

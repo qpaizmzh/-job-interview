@@ -93,8 +93,8 @@
   * [spring-mybatis整合](mybatis/spring-mybatiszheng-he.md)
 * [高效编程](gao-xiao-bian-cheng.md)
   * [函数编程](gao-xiao-bian-cheng/han-shu-bian-cheng.md)
-  * [流操作和集合操作对比](gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.md)
-  * 优雅关闭资源
+  * [流（Stream）的使用](gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.md)
+  * [优雅关闭资源](gao-xiao-bian-cheng/you-ya-guan-bi-zi-yuan.md)
   * 方法引用
 * [IO编程](iobian-cheng.md)
   * [小技巧](iobian-cheng/xiao-ji-qiao.md)
