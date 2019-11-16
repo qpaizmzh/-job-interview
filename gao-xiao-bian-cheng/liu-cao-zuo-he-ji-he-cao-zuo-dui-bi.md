@@ -202,5 +202,30 @@ public class SteamVsList {
     }
 ```
 
+* 转换成Map（分组）
+
+```
+   public void collectToGroup() throws IOException {
+        //通过对象某个属性值进行分类
+        Map<StringCatogoryEnum, List<Skt>> collect = sktList.stream().collect(Collectors.groupingBy(
+                skt -> skt.getCatogory()
+        ));
+        System.out.println(collect);
+    }
+```
+
+* 对集合进行分块
+
+```java
+   public void partition() throws IOException {
+        //通过表达式的某个判断条件进行分块，一块是不符合条件的，一块是复合条件的，是分组的特殊分法
+        Map<Boolean, List<Skt>> collect = sktList.stream().collect(
+                Collectors.partitioningBy(
+                        skt -> skt.getCatogory().equals("")
+                ));
+        System.out.println(collect);
+    }
+```
+
 
 
