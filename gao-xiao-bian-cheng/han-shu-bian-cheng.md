@@ -59,14 +59,14 @@
 ## Lambda表达式简介
 
 * Java8引入的函数式的编程风格
-*  一种匿名函数的代替
+* 一种匿名函数的代替
 * 通过将行为参数化传递到方法代码里面
 
 ## Lambda表达式的形式
 
 * 有种包含两个参数的方法需要注意
 
-```
+```java
 BinaryOperator<Long> binaryOperator =(x,y)->x+y;
 System.out.println(binaryOperator.apply(1L,2L));
 ```

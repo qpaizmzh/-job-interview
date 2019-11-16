@@ -95,4 +95,6 @@
   * [函数编程](gao-xiao-bian-cheng/han-shu-bian-cheng.md)
   * [流操作和集合操作对比](gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.md)
   * 优雅关闭资源
+* [IO编程](iobian-cheng.md)
+  * [小技巧](iobian-cheng/xiao-ji-qiao.md)
 
