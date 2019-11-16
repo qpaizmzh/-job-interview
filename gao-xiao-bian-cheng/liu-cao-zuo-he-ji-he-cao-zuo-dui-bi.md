@@ -193,8 +193,13 @@ public class SteamVsList {
 
 * 转换成集合List
 
-```
-
+```java
+    public void collectToList() throws IOException {
+        List<Skt> collect = sktList.stream()
+                .filter(skt -> skt.getCatogory().equals(""))
+                .collect(Collectors.toList());
+        System.out.println(collect);
+    }
 ```
 
 
