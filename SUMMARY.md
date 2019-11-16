@@ -95,7 +95,8 @@
   * [函数编程](gao-xiao-bian-cheng/han-shu-bian-cheng.md)
   * [流（Stream）的使用](gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.md)
   * [优雅关闭资源](gao-xiao-bian-cheng/you-ya-guan-bi-zi-yuan.md)
-  * 方法引用
+  * [方法引用](gao-xiao-bian-cheng/fang-fa-yin-yong.md)
+  * [好用的工具集](gao-xiao-bian-cheng/hao-yong-de-gong-ju-ji.md)
 * [IO编程](iobian-cheng.md)
   * [小技巧](iobian-cheng/xiao-ji-qiao.md)
 
