@@ -141,7 +141,7 @@ public class SteamVsList {
 
 * ## ![](/高效编程/流的组成.png)流的使用
 * ```
- 
+
   ```
 
 ## 流的创建
@@ -187,6 +187,14 @@ public class SteamVsList {
         Stream<Double> doubleStream = Stream.generate(Math::random);//随机生成
         doubleStream.limit(100).forEach(System.out::println);
     }
+```
+
+## 收集器
+
+* 转换成集合List
+
+```
+
 ```
 
 
