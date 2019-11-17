@@ -98,6 +98,7 @@
   * [方法引用](gao-xiao-bian-cheng/fang-fa-yin-yong.md)
   * [好用的工具集](gao-xiao-bian-cheng/hao-yong-de-gong-ju-ji.md)
   * [Lokmok](gao-xiao-bian-cheng/lokmok.md)
+  * [校验框架的使用](gao-xiao-bian-cheng/xiao-yan-kuang-jia-de-shi-yong.md)
 * [IO编程](iobian-cheng.md)
   * [小技巧](iobian-cheng/xiao-ji-qiao.md)
 
