@@ -146,5 +146,17 @@
 * guava提供了CharStream和ByteStream的工具类，方便进行对相关的流的操作，但是这个东西需要自己手动关闭这两个才行
 * guava还提供了charSource/byteSource/charSink/charResource这几个类，Source类的用于读的，而Sink是用于写的，可以看实例：
 
+```java
+    //文件操作--复制
+    public void copy() throws IOException {
+        CharSource source = Files.asCharSource(new File("路径"), Charsets.UTF_8);//Source是用于读
+        CharSink sink = Files.asCharSink(new File("路径"), Charsets.UTF_8);//Sink是用于写的
+        /***
+         * 拷贝文件
+         */
+        source.copyTo(sink);
+    }
+```
+
 
 
