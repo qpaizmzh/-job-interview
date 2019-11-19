@@ -77,8 +77,8 @@ public class ConcurrencyTest {
 
     private static ConcurrencyTest concurrencyTest = null;
 
-    //这个可以保证线程安全，但是每一次调用都要添加一个锁，非常的耗性能
-    public synchronized ConcurrencyTest getInstance() {
+  
+    public ConcurrencyTest getInstance() {
 
         //如果不加方法的synchronized的关键字，这里同样没有线程安全
         //CPU创建实例，经过分配内存对象空间，初始化对象，把变量指向分配的内存空间
@@ -128,8 +128,6 @@ public class ConcurrencyTest {
     }
 }
 ```
-
-
 
 ## 堆栈封闭
 
