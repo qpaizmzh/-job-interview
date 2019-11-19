@@ -77,7 +77,7 @@ public class ConcurrencyTest {
 
     private static ConcurrencyTest concurrencyTest = null;
 
-  
+
     public ConcurrencyTest getInstance() {
 
         //如果不加方法的synchronized的关键字，这里同样没有线程安全
@@ -101,7 +101,7 @@ public class ConcurrencyTest {
 
 ```java
 /***
- * 普通的单例模式--线性安全
+ * 普通的单例模式--线性安全(而且还能屏蔽掉因序列化或者是反射带来的单例模式被被破坏的情况)
  */
 public class ConcurrencyTest {
     private ConcurrencyTest() {
