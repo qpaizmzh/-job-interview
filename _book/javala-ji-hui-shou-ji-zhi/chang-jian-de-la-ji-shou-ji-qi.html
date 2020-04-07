@@ -1,0 +1,1994 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>常见的垃圾收集器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chang-jian-mian-shi-ti.html" />
+    
+    
+    <link rel="prev" href="fen-dai-shou-ji-suan-fa.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1.html">
+            
+                <a href="../chapter1.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/13001-san-ci-wo-shou-he-si-ci-wo-shou.html">
+            
+                <a href="../chapter1/13001-san-ci-wo-shou-he-si-ci-wo-shou.html">
+            
+                    
+                    1、三次握手和四次握手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/2udpxie-yi-yu-udp-he-tcp-de-qu-bie.html">
+            
+                <a href="../chapter1/2udpxie-yi-yu-udp-he-tcp-de-qu-bie.html">
+            
+                    
+                    2、UDP协议与UDP和TCP的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/3tcpde-hua-dong-chuang-kou.html">
+            
+                <a href="../chapter1/3tcpde-hua-dong-chuang-kou.html">
+            
+                    
+                    3、TCP的滑动窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/4httpxiang-guan.html">
+            
+                <a href="../chapter1/4httpxiang-guan.html">
+            
+                    
+                    4、HTTP相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/5socket.html">
+            
+                <a href="../chapter1/5socket.html">
+            
+                    
+                    5、Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../shu-ju-ku-fang-mian.html">
+            
+                <a href="../shu-ju-ku-fang-mian.html">
+            
+                    
+                    数据库方面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai.html">
+            
+                <a href="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai.html">
+            
+                    
+                    1、索引模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b-tree.html">
+            
+                <a href="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b-tree.html">
+            
+                    
+                    B-TREE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b+tree.html">
+            
+                <a href="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/b+tree.html">
+            
+                    
+                    B+TREE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/hashsuo-yin.html">
+            
+                <a href="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/hashsuo-yin.html">
+            
+                    
+                    Hash索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/mi-ji-suo-yin-he-xi-shu-suo-yin.html">
+            
+                <a href="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/mi-ji-suo-yin-he-xi-shu-suo-yin.html">
+            
+                    
+                    密集索引和稀疏索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/you-hua-man-cha-cha-xun-de-sql.html">
+            
+                <a href="../shu-ju-ku-fang-mian/13001-suo-yin-mo-kuai/you-hua-man-cha-cha-xun-de-sql.html">
+            
+                    
+                    优化慢查查询的sql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../shu-ju-ku-fang-mian/23001-suo-mo-kuai.html">
+            
+                <a href="../shu-ju-ku-fang-mian/23001-suo-mo-kuai.html">
+            
+                    
+                    2、锁模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../shu-ju-ku-fang-mian/23001-suo-mo-kuai/myisamyu-innodb-guan-yu-suo-fang-mian-de-qu-bie-shi-shi-yao.html">
+            
+                <a href="../shu-ju-ku-fang-mian/23001-suo-mo-kuai/myisamyu-innodb-guan-yu-suo-fang-mian-de-qu-bie-shi-shi-yao.html">
+            
+                    
+                    MyISAM与InnoDB关于锁方面的区别是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../shu-ju-ku-fang-mian/23001-suo-mo-kuai/shu-ju-ku-suo-de-fen-lei.html">
+            
+                <a href="../shu-ju-ku-fang-mian/23001-suo-mo-kuai/shu-ju-ku-suo-de-fen-lei.html">
+            
+                    
+                    数据库锁的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../shu-ju-ku-fang-mian/23001-suo-mo-kuai/shi-wu-ge-li-ji-bie-yi-ji-ge-ji-bie-xia-de-bing-fa-fang-wen-wen-ti.html">
+            
+                <a href="../shu-ju-ku-fang-mian/23001-suo-mo-kuai/shi-wu-ge-li-ji-bie-yi-ji-ge-ji-bie-xia-de-bing-fa-fang-wen-wen-ti.html">
+            
+                    
+                    事务隔离级别以及各级别下的并发访问问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../shu-ju-ku-fang-mian/yu-fa-bu-fen.html">
+            
+                <a href="../shu-ju-ku-fang-mian/yu-fa-bu-fen.html">
+            
+                    
+                    语法部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../redisfang-mian.html">
+            
+                <a href="../redisfang-mian.html">
+            
+                    
+                    Redis方面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../redisfang-mian/wei-shiyao-redis-zhe-yao-kuai.html">
+            
+                <a href="../redisfang-mian/wei-shiyao-redis-zhe-yao-kuai.html">
+            
+                    
+                    为什么Redis这么快
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../redisfang-mian/duo-lu-i-o-fu-yong-mo-xing.html">
+            
+                <a href="../redisfang-mian/duo-lu-i-o-fu-yong-mo-xing.html">
+            
+                    
+                    多路I/O复用模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../redisfang-mian/yong-guo-de-redis-shu-ju-lei-xing.html">
+            
+                <a href="../redisfang-mian/yong-guo-de-redis-shu-ju-lei-xing.html">
+            
+                    
+                    用过的Redis数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../redisfang-mian/cong-hai-liang-key-li-cha-xun-chu-mou-yi-ge-gu-ding-qian-zhui-de-key.html">
+            
+                <a href="../redisfang-mian/cong-hai-liang-key-li-cha-xun-chu-mou-yi-ge-gu-ding-qian-zhui-de-key.html">
+            
+                    
+                    从海量Key里查询出某一个固定前缀的Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../redisfang-mian/ru-he-tong-guo-redis-shi-xian-fen-bu-shi-suo.html">
+            
+                <a href="../redisfang-mian/ru-he-tong-guo-redis-shi-xian-fen-bu-shi-suo.html">
+            
+                    
+                    如何通过Redis实现分布式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../redisfang-mian/ru-he-shi-yong-redis-zuo-yi-bu-dui-lie.html">
+            
+                <a href="../redisfang-mian/ru-he-shi-yong-redis-zuo-yi-bu-dui-lie.html">
+            
+                    
+                    如何使用Redis做异步队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../redisfang-mian/redisru-he-zuo-chi-jiu-hua.html">
+            
+                <a href="../redisfang-mian/redisru-he-zuo-chi-jiu-hua.html">
+            
+                    
+                    Redis如何做持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../redisfang-mian/shi-yong-pipeline-de-hao-chu-he-zhu-cong-tong-bu.html">
+            
+                <a href="../redisfang-mian/shi-yong-pipeline-de-hao-chu-he-zhu-cong-tong-bu.html">
+            
+                    
+                    使用Pipeline的好处和主从同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../redisfang-mian/redisde-ji-qun-yuan-li.html">
+            
+                <a href="../redisfang-mian/redisde-ji-qun-yuan-li.html">
+            
+                    
+                    Redis的集群原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../redisfang-mian/rediszhong-de-huan-cun-wen-ti.html">
+            
+                <a href="../redisfang-mian/rediszhong-de-huan-cun-wen-ti.html">
+            
+                    
+                    redis中的缓存问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../linuxfang-mian.html">
+            
+                <a href="../linuxfang-mian.html">
+            
+                    
+                    Linux方面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../linuxfang-mian/ru-he-cha-zhao-te-ding-de-wen-jian.html">
+            
+                <a href="../linuxfang-mian/ru-he-cha-zhao-te-ding-de-wen-jian.html">
+            
+                    
+                    如何查找特定的文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../linuxfang-mian/jian-suo-wen-jian-nei-rong.html">
+            
+                <a href="../linuxfang-mian/jian-suo-wen-jian-nei-rong.html">
+            
+                    
+                    检索文件内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../linuxfang-mian/dui-wen-jian-nei-rong-zuo-tong-ji.html">
+            
+                <a href="../linuxfang-mian/dui-wen-jian-nei-rong-zuo-tong-ji.html">
+            
+                    
+                    对文件内容做统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../linuxfang-mian/pi-liang-ti-huan-wen-jian-nei-rong.html">
+            
+                <a href="../linuxfang-mian/pi-liang-ti-huan-wen-jian-nei-rong.html">
+            
+                    
+                    批量替换文件内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../jvmxiang-guan.html">
+            
+                <a href="../jvmxiang-guan.html">
+            
+                    
+                    JVM相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ping-tai-wu-guan-xing-zen-yao-shi-xian-ff1f.html">
+            
+                <a href="../ping-tai-wu-guan-xing-zen-yao-shi-xian-ff1f.html">
+            
+                    
+                    平台无关性怎么实现？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../jvmru-he-jia-8f7d-class-wen-jian.html">
+            
+                <a href="../jvmru-he-jia-8f7d-class-wen-jian.html">
+            
+                    
+                    JVM如何加载.class文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../fan-she.html">
+            
+                <a href="../fan-she.html">
+            
+                    
+                    反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../lei-cong-bian-yi-dao-zhi-xing-de-guo-cheng.html">
+            
+                <a href="../lei-cong-bian-yi-dao-zhi-xing-de-guo-cheng.html">
+            
+                    
+                    谈谈ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../loadclasshe-forname-de-qu-bie.html">
+            
+                <a href="../loadclasshe-forname-de-qu-bie.html">
+            
+                    
+                    LoadClass和forName的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../nei-cun-mo-xing.html">
+            
+                <a href="../nei-cun-mo-xing.html">
+            
+                    
+                    内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../javala-ji-hui-shou-ji-zhi.html">
+            
+                <a href="../javala-ji-hui-shou-ji-zhi.html">
+            
+                    
+                    Java垃圾回收机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="fu-zhi-suan-fa.html">
+            
+                <a href="fu-zhi-suan-fa.html">
+            
+                    
+                    复制算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="biao-8bb0-zheng-li-suan-fa.html">
+            
+                <a href="biao-8bb0-zheng-li-suan-fa.html">
+            
+                    
+                    标记-整理算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="fen-dai-shou-ji-suan-fa.html">
+            
+                <a href="fen-dai-shou-ji-suan-fa.html">
+            
+                    
+                    分代收集算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.4" data-path="chang-jian-de-la-ji-shou-ji-qi.html">
+            
+                <a href="chang-jian-de-la-ji-shou-ji-qi.html">
+            
+                    
+                    常见的垃圾收集器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="chang-jian-mian-shi-ti.html">
+            
+                <a href="chang-jian-mian-shi-ti.html">
+            
+                    
+                    常见面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../jin-cheng-he-xian-cheng.html">
+            
+                <a href="../jin-cheng-he-xian-cheng.html">
+            
+                    
+                    进程和线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../jin-cheng-he-xian-cheng-de-qu-bie.html">
+            
+                <a href="../jin-cheng-he-xian-cheng-de-qu-bie.html">
+            
+                    
+                    进程和线程的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../threadzhong-de-start-he-run-fang-fa-de-qu-bie.html">
+            
+                <a href="../threadzhong-de-start-he-run-fang-fa-de-qu-bie.html">
+            
+                    
+                    Thread中的start和run方法的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../threadhe-runnable-de-guan-xi.html">
+            
+                <a href="../threadhe-runnable-de-guan-xi.html">
+            
+                    
+                    Thread和Runnable的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../shi-xian-xian-cheng-fan-hui-de-fang-shi.html">
+            
+                <a href="../shi-xian-xian-cheng-fan-hui-de-fang-shi.html">
+            
+                    
+                    实现线程返回的方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../sleephe-wait-fang-fa-de-qu-bie.html">
+            
+                <a href="../sleephe-wait-fang-fa-de-qu-bie.html">
+            
+                    
+                    sleep和wait方法的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../notifyhe-notifyall-de-qu-bie.html">
+            
+                <a href="../notifyhe-notifyall-de-qu-bie.html">
+            
+                    
+                    notify和notifyAll()的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../xian-cheng-de-zhong-duan.html">
+            
+                <a href="../xian-cheng-de-zhong-duan.html">
+            
+                    
+                    线程的中断
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../javachang-yong-lei-ku.html">
+            
+                <a href="../javachang-yong-lei-ku.html">
+            
+                    
+                    Java常用类库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../javachang-yong-lei-ku/errorheexception-de-qu-bie.html">
+            
+                <a href="../javachang-yong-lei-ku/errorheexception-de-qu-bie.html">
+            
+                    
+                    Error和Exception的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../javachang-yong-lei-ku/collectionti-xi.html">
+            
+                <a href="../javachang-yong-lei-ku/collectionti-xi.html">
+            
+                    
+                    Collection体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../javachang-yong-lei-ku/ji-he-hashmap.html">
+            
+                <a href="../javachang-yong-lei-ku/ji-he-hashmap.html">
+            
+                    
+                    集合HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../javachang-yong-lei-ku/currenthashmap.html">
+            
+                <a href="../javachang-yong-lei-ku/currenthashmap.html">
+            
+                    
+                    CurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../javachang-yong-lei-ku/jucbao-de-shu-li.html">
+            
+                <a href="../javachang-yong-lei-ku/jucbao-de-shu-li.html">
+            
+                    
+                    JUC包的梳理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../springjia-zu.html">
+            
+                <a href="../springjia-zu.html">
+            
+                    
+                    Spring家族
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../springjia-zu/iocyuan-li.html">
+            
+                <a href="../springjia-zu/iocyuan-li.html">
+            
+                    
+                    IOC原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../springjia-zu/springde-ioc-ying-yong.html">
+            
+                <a href="../springjia-zu/springde-ioc-ying-yong.html">
+            
+                    
+                    Spring的IOC应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../springjia-zu/spring-aop.html">
+            
+                <a href="../springjia-zu/spring-aop.html">
+            
+                    
+                    Spring AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../springjia-zu/springshi-wu-de-xiang-guan-kao-dian.html">
+            
+                <a href="../springjia-zu/springshi-wu-de-xiang-guan-kao-dian.html">
+            
+                    
+                    Spring事务的相关考点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../springjia-zu/springsheng-ming-zhou-qi.html">
+            
+                <a href="../springjia-zu/springsheng-ming-zhou-qi.html">
+            
+                    
+                    Bean生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    Servlet的原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.6.1" >
+            
+                <span>
+            
+                    
+                    Filter的原理
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../springjia-zu/springmvc-interceptor.html">
+            
+                <a href="../springjia-zu/springmvc-interceptor.html">
+            
+                    
+                    SpringMVC-InterCeptor的原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../springjia-zu/springSecurity.html">
+            
+                <a href="../springjia-zu/springSecurity.html">
+            
+                    
+                    SpringSeurity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" >
+            
+                <span>
+            
+                    
+                    SpringCloud
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.9.1" data-path="../springjia-zu/springCloud/eureka.html">
+            
+                <a href="../springjia-zu/springCloud/eureka.html">
+            
+                    
+                    eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.2" data-path="../springjia-zu/springCloud/Feign.html">
+            
+                <a href="../springjia-zu/springCloud/Feign.html">
+            
+                    
+                    feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.3" data-path="../springjia-zu/springCloud/Hystrix.html">
+            
+                <a href="../springjia-zu/springCloud/Hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.4" data-path="../springjia-zu/springCloud/Zuul.html">
+            
+                <a href="../springjia-zu/springCloud/Zuul.html">
+            
+                    
+                    Zuul网关Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../shu-ju-jie-gou-yu-suan-fa.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa.html">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../shu-ju-jie-gou-yu-suan-fa/shu-zu-he-lian-biao.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/shu-zu-he-lian-biao.html">
+            
+                    
+                    数组和链表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../shu-ju-jie-gou-yu-suan-fa/SparseArray.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/SparseArray.html">
+            
+                    
+                    稀疏数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="../shu-ju-jie-gou-yu-suan-fa/er-cha-shu.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/er-cha-shu.html">
+            
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="../shu-ju-jie-gou-yu-suan-fa/dan-lian-biao.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/dan-lian-biao.html">
+            
+                    
+                    单链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian.html">
+            
+                    
+                    简单的算法考点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/mao-pao-suan-fa.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/mao-pao-suan-fa.html">
+            
+                    
+                    冒泡算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/xuan-ze-pai-xu.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/xuan-ze-pai-xu.html">
+            
+                    
+                    选择排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/cha-ru-pai-xu.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/cha-ru-pai-xu.html">
+            
+                    
+                    插入排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/kuai-su-pai-xu.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/jian-dan-de-suan-fa-kao-dian/kuai-su-pai-xu.html">
+            
+                    
+                    快速排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" >
+            
+                <span>
+            
+                    
+                    队列
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.3.1" data-path="../shu-ju-jie-gou-yu-suan-fa/dui-lie/ArrayCircleQueue.html">
+            
+                <a href="../shu-ju-jie-gou-yu-suan-fa/dui-lie/ArrayCircleQueue.html">
+            
+                    
+                    数组模拟环形队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../javabing-fa-bian-cheng.html">
+            
+                <a href="../javabing-fa-bian-cheng.html">
+            
+                    
+                    Java并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../cpuduo-ji-huan-cun.html">
+            
+                <a href="../cpuduo-ji-huan-cun.html">
+            
+                    
+                    cpu多级缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../yuan-zi-lei.html">
+            
+                <a href="../yuan-zi-lei.html">
+            
+                    
+                    原子类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../an-quan-fa-bu-dui-xiang.html">
+            
+                <a href="../an-quan-fa-bu-dui-xiang.html">
+            
+                    
+                    安全发布对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../xian-cheng-an-quan-wen-ti.html">
+            
+                <a href="../xian-cheng-an-quan-wen-ti.html">
+            
+                    
+                    线程安全问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../bing-fa-rong-qi-juc.html">
+            
+                <a href="../bing-fa-rong-qi-juc.html">
+            
+                    
+                    并发容器JUC
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.5.1" data-path="../bing-fa-rong-qi-juc/aqsabstractqueuesynchronizer.html">
+            
+                <a href="../bing-fa-rong-qi-juc/aqsabstractqueuesynchronizer.html">
+            
+                    
+                    AQS（AbstractQueueSynchronizer）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5.2" data-path="../bing-fa-rong-qi-juc/xian-cheng-chi.html">
+            
+                <a href="../bing-fa-rong-qi-juc/xian-cheng-chi.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../si-suo.html">
+            
+                <a href="../si-suo.html">
+            
+                    
+                    死锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../bing-fa-shi-jian.html">
+            
+                <a href="../bing-fa-shi-jian.html">
+            
+                    
+                    并发实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../mybatis.html">
+            
+                <a href="../mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../mybatis/mybatisde-ji-ben-pei-zhi.html">
+            
+                <a href="../mybatis/mybatisde-ji-ben-pei-zhi.html">
+            
+                    
+                    mybatis的基本配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../mybatis/ji-ben-biao-qian-jie-xi.html">
+            
+                <a href="../mybatis/ji-ben-biao-qian-jie-xi.html">
+            
+                    
+                    基本标签解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="../mybatis/ji-ben-biao-qian-jie-xi/databaseidproviderde-shi-yong.html">
+            
+                <a href="../mybatis/ji-ben-biao-qian-jie-xi/databaseidproviderde-shi-yong.html">
+            
+                    
+                    dataBaseIdProvider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../mybatis/spring-mybatiszheng-he.html">
+            
+                <a href="../mybatis/spring-mybatiszheng-he.html">
+            
+                    
+                    spring-mybatis整合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../mybatis/mybatisPageHelper.html">
+            
+                <a href="../mybatis/mybatisPageHelper.html">
+            
+                    
+                    mybatisPageHelper映射结果集被合并的情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../gao-xiao-bian-cheng.html">
+            
+                <a href="../gao-xiao-bian-cheng.html">
+            
+                    
+                    高效编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../gao-xiao-bian-cheng/han-shu-bian-cheng.html">
+            
+                <a href="../gao-xiao-bian-cheng/han-shu-bian-cheng.html">
+            
+                    
+                    函数编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.html">
+            
+                <a href="../gao-xiao-bian-cheng/liu-cao-zuo-he-ji-he-cao-zuo-dui-bi.html">
+            
+                    
+                    流（Stream）的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../gao-xiao-bian-cheng/you-ya-guan-bi-zi-yuan.html">
+            
+                <a href="../gao-xiao-bian-cheng/you-ya-guan-bi-zi-yuan.html">
+            
+                    
+                    优雅关闭资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../gao-xiao-bian-cheng/fang-fa-yin-yong.html">
+            
+                <a href="../gao-xiao-bian-cheng/fang-fa-yin-yong.html">
+            
+                    
+                    方法引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../gao-xiao-bian-cheng/hao-yong-de-gong-ju-ji.html">
+            
+                <a href="../gao-xiao-bian-cheng/hao-yong-de-gong-ju-ji.html">
+            
+                    
+                    好用的工具集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../gao-xiao-bian-cheng/lokmok.html">
+            
+                <a href="../gao-xiao-bian-cheng/lokmok.html">
+            
+                    
+                    Lokmok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../gao-xiao-bian-cheng/xiao-yan-kuang-jia-de-shi-yong.html">
+            
+                <a href="../gao-xiao-bian-cheng/xiao-yan-kuang-jia-de-shi-yong.html">
+            
+                    
+                    校验框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../iobian-cheng.html">
+            
+                <a href="../iobian-cheng.html">
+            
+                    
+                    IO编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../iobian-cheng/xiao-ji-qiao.html">
+            
+                <a href="../iobian-cheng/xiao-ji-qiao.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    消息队列
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../message-queue/chooseMessageQueue.html">
+            
+                <a href="../message-queue/chooseMessageQueue.html">
+            
+                    
+                    消息队列的选型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    Nginx
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../nginx/nginx-thread-model.html">
+            
+                <a href="../nginx/nginx-thread-model.html">
+            
+                    
+                    Nginx线程模型conflog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../nginx/nginx-conf.html">
+            
+                <a href="../nginx/nginx-conf.html">
+            
+                    
+                    Nginx配置文件详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../nginx/nginx-cluster.html">
+            
+                <a href="../nginx/nginx-cluster.html">
+            
+                    
+                    nginx负载均衡和集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../nginx/nginx-log.html">
+            
+                <a href="../nginx/nginx-log.html">
+            
+                    
+                    nginx日志切割
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../keep-alive.html">
+            
+                <a href="../keep-alive.html">
+            
+                    
+                    keepAlive
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >常见的垃圾收集器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5E38;&#x89C1;&#x7684;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;">&#x5E38;&#x89C1;&#x7684;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;</h1>
+<h2 id="jvm&#x7684;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;">JVM&#x7684;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;</h2>
+<ul>
+<li>Server&#xFF0C;&#x91CD;&#x91CF;</li>
+<li>Client&#xFF0C;&#x8F7B;&#x91CF;</li>
+</ul>
+<h2 id="&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x7684;&#x8054;&#x7CFB;">&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x7684;&#x8054;&#x7CFB;</h2>
+<ul>
+<li>&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x6709;&#x8FDE;&#x7EBF;&#x7684;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x53EF;&#x4EE5;&#x642D;&#x914D;&#x4F7F;&#x7528;</li>
+<li><img src="../&#x5783;&#x573E;/4.png" alt=""></li>
+<li><img src="../&#x5783;&#x573E;/5.png" alt=""></li>
+<li><img src="../&#x5783;&#x573E;/7.png" alt=""></li>
+<li><h3 id="parallel-scavenge&#x6536;&#x96C6;&#x5668;&#xFF08;-xx&#xFF1A;userparallelgc&#x590D;&#x5236;&#x7B97;&#x6CD5;&#xFF09;">Parallel Scavenge&#x6536;&#x96C6;&#x5668;&#xFF08;-XX&#xFF1A;UserparallelGC,&#x590D;&#x5236;&#x7B97;&#x6CD5;&#xFF09;</h3>
+<ul>
+<li><h4 id="&#x541E;&#x5410;&#x91CF;&#x8FD0;&#x884C;&#x7528;&#x6237;&#x4EE3;&#x7801;&#x65F6;&#x95F4;&#xFF08;&#x8FD0;&#x884C;&#x7528;&#x6237;&#x4EE3;&#x7801;&#x65F6;&#x95F4;&#x5783;&#x573E;&#x6536;&#x96C6;&#x65F6;&#x95F4;&#xFF09;">&#x541E;&#x5410;&#x91CF;=&#x8FD0;&#x884C;&#x7528;&#x6237;&#x4EE3;&#x7801;&#x65F6;&#x95F4;/&#xFF08;&#x8FD0;&#x884C;&#x7528;&#x6237;&#x4EE3;&#x7801;&#x65F6;&#x95F4;+&#x5783;&#x573E;&#x6536;&#x96C6;&#x65F6;&#x95F4;&#xFF09;</h4>
+</li>
+<li><p>&#x6BD4;&#x8D77;&#x5173;&#x6CE8;&#x7528;&#x6237;&#x7EBF;&#x7A0B;&#x505C;&#x987F;&#x65F6;&#x95F4;&#xFF0C;&#x66F4;&#x5173;&#x6CE8;&#x7CFB;&#x7EDF;&#x7684;&#x541E;&#x5410;&#x91CF;&#xFF0C;&#x9002;&#x5408;&#x5728;&#x4EA4;&#x4E92;&#x8F83;&#x5C11;&#x5E76;&#x4E14;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;</p>
+</li>
+<li><p>&#x5728;&#x591A;&#x6838;&#x4E0B;&#x6267;&#x884C;&#x624D;&#x6709;&#x4F18;&#x52BF;&#xFF0C;Server&#x6A21;&#x5F0F;&#x4E0B;&#x9ED8;&#x8BA4;&#x7684;&#x5E74;&#x8F7B;&#x4EE3;&#x6536;&#x96C6;&#x5668;</p>
+</li>
+<li><p><img src="../&#x5783;&#x573E;/8.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fen-dai-shou-ji-suan-fa.html" class="navigation navigation-prev " aria-label="Previous page: 分代收集算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chang-jian-mian-shi-ti.html" class="navigation navigation-next " aria-label="Next page: 常见面试题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"常见的垃圾收集器","level":"1.7.4","depth":2,"next":{"title":"常见面试题","level":"1.7.5","depth":2,"path":"javala-ji-hui-shou-ji-zhi/chang-jian-mian-shi-ti.md","ref":"javala-ji-hui-shou-ji-zhi/chang-jian-mian-shi-ti.md","articles":[]},"previous":{"title":"分代收集算法","level":"1.7.3","depth":2,"path":"javala-ji-hui-shou-ji-zhi/fen-dai-shou-ji-suan-fa.md","ref":"javala-ji-hui-shou-ji-zhi/fen-dai-shou-ji-suan-fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javala-ji-hui-shou-ji-zhi/chang-jian-de-la-ji-shou-ji-qi.md","mtime":"2020-03-18T03:03:38.900Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-07T15:56:11.350Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
